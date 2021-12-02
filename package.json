@@ -1,0 +1,23 @@
+{
+  "name": "hostilealiensjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A11AN0/Hostile-Aliens.git"
+  },
+  "keywords": [],
+  "author": "Allan.O",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A11AN0/Hostile-Aliens/issues"
+  },
+  "homepage": "https://github.com/A11AN0/Hostile-Aliens#readme",
+  "devDependencies": {
+    "jest": "^27.4.3"
+  }
+}
