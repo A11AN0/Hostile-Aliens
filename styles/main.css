@@ -40,6 +40,11 @@ body {
   line-height: 5px;
   overflow: hidden;
   border-radius: 4px;
+  transition: 300ms;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .cannon {
@@ -60,6 +65,7 @@ body {
   cursor: pointer;
   font-size: 35px;
   transition: 250ms ease;
+  border-radius: 10px;
 }
 .cannon__button:hover {
   color: red;

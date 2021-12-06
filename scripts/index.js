@@ -23,7 +23,13 @@ export class Ship {
             <p>${this.type}-Ship</p>
             <p>HP: ${this.currentHP}</p>
         </div>`;
-    return this.isDestroyed? "kaboom": profileHTML 
+    
+    const hiddenHTML = `
+    <div class = "Ship-${this.shipNumber} ship hidden">
+        <p>${this.type}-Ship</p>
+        <p>HP: ${this.currentHP}</p>
+    </div>`;
+    return this.isDestroyed? hiddenHTML: profileHTML 
   }
 }
 /*----------------------------------------------------------------------------*/
