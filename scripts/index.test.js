@@ -22,17 +22,22 @@ describe("------Tests for the Ship Class------- \n", () => {
             const testShip = new Ship("prototype", 37, 5, 420);
             testShip.updateShip()
             expect(testShip.generatedShipHTML).toBe(`
-        <div class = "Ship-${testShip.shipNumber}">
-            <h1>${testShip.type} Ship-${testShip.shipNumber}</h1>
-            <h1>${testShip.currentHP}</h1>
+        <div class = "Ship-${testShip.shipNumber} ship">
+            <p>${testShip.type}-Ship</p>
+            <p>HP: ${testShip.currentHP}</p>
         </div>`
             );
         });
 
-        test("When ship is destroyed, return kaboom \n", () => {
+        test("When ship is destroyed, return correct HTML \n", () => {
             const testShip = new Ship("prototype", 37, 37, 420);
             testShip.updateShip()
-            expect(testShip.generatedShipHTML).toBe("kaboom");
+            expect(testShip.generatedShipHTML).toBe(`
+    <div class = "Ship-${testShip.shipNumber} ship hidden">
+        <p>${testShip.type}-Ship</p>
+        <p>HP: ${testShip.currentHP}</p>
+    </div>`
+            );
         });
     });
 
