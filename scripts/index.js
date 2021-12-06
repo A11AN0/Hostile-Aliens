@@ -19,9 +19,9 @@ export class Ship {
   //Will generate an html element of the ship
   get generatedShipHTML() {
     const profileHTML = `
-        <div class = "Ship-${this.shipNumber}">
-            <h1>${this.type} Ship-${this.shipNumber}</h1>
-            <h1>${this.currentHP}</h1>
+        <div class = "Ship-${this.shipNumber} ship">
+            <p>${this.type}-Ship</p>
+            <p>HP: ${this.currentHP}</p>
         </div>`;
     return this.isDestroyed? "kaboom": profileHTML 
   }
@@ -72,6 +72,7 @@ export const cannon = (enemyFleet) => {
   const randomTarget = availableTargets[Math.floor(Math.random()*availableTargets.length)]
   return randomTarget
 }
+
 
 
 

@@ -1,0 +1,26 @@
+@media screen and (min-width: 481px) {
+    body {
+        height: max(100vh, 550px);
+    }
+    .ship {
+      font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        height: max(100vh, 600px);
+    }
+
+    .ship {
+      font-size: 17.5px;
+      width: 50%;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .ship {
+      font-size: 20px;
+      width: 42.5%;
+    }
+}

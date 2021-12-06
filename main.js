@@ -3,12 +3,20 @@ import {Fleet, cannon} from './scripts/index.js'
 //MAIN GAME
 /*----------------------------------------------------------------------------*/
 
-const body = document.querySelector("body")
+const arena = document.querySelector(".arena")
+const button = document.querySelector(".cannon__button")
 const starFleet = new Fleet
 starFleet.buildFleet()
-body.innerHTML = starFleet.entireFleetHTML
+arena.innerHTML = starFleet.entireFleetHTML
 
-document.addEventListener("click", ()=>{
+button.addEventListener("click", ()=>{
   starFleet.updateFleetStatus(cannon(starFleet))
-  body.innerHTML=starFleet.entireFleetHTML
+  arena.innerHTML=starFleet.entireFleetHTML
+})
+
+document.addEventListener("keydown", (event)=>{
+  if(event.key === " "){
+    starFleet.updateFleetStatus(cannon(starFleet))
+    arena.innerHTML=starFleet.entireFleetHTML
+  }
 })

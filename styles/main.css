@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: max(100vh, 500px);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/styles/images/nasa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.logo {
+  height: 20%;
+}
+
+.arena {
+  display: grid;
+  grid-template-areas: "Ship-2 Ship-1 Ship-3" "Ship-4 Ship-6 Ship-6" "Ship-7 Ship-8 Ship-9" "Ship-10 Ship-11 Ship-12" "Ship-13 Ship-14 Ship-14";
+  justify-items: center;
+  height: 60%;
+  gap: 5%;
+}
+
+.ship {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(50px);
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 10px;
+  line-height: 5px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.cannon {
+  margin-top: 70px;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+.cannon__button {
+  width: 35%;
+  height: 45%;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  text-align: center;
+  cursor: pointer;
+  font-size: 35px;
+  transition: 250ms ease;
+}
+.cannon__button:hover {
+  color: red;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 481px) {
+  body {
+    height: max(100vh, 550px);
+  }
+
+  .ship {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    height: max(100vh, 600px);
+  }
+
+  .ship {
+    font-size: 17.5px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 991px) {
+  .ship {
+    font-size: 20px;
+    width: 42.5%;
+  }
+}
