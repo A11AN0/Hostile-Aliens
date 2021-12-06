@@ -29,7 +29,7 @@ export class Ship {
 /*----------------------------------------------------------------------------*/
 //FLEET CLASS
 /*----------------------------------------------------------------------------*/
-class Fleet {
+export class Fleet {
   constructor(){
     this.assignedShips = []
   }
@@ -65,26 +65,14 @@ class Fleet {
 
 /*Makes an array from non-destroyed ships in fleet and then selects a random ship to target and return its number 
 so it can only hit living alien ships */
-const cannon = (enemyFleet) => {
+export const cannon = (enemyFleet) => {
   const availableTargets = enemyFleet.assignedShips.map((ship)=>{
     if(ship.isDestroyed === false) return ship.shipNumber}).filter((items) => items != undefined)
     
   const randomTarget = availableTargets[Math.floor(Math.random()*availableTargets.length)]
   return randomTarget
 }
-/*----------------------------------------------------------------------------*/
-//MAIN GAME
-/*----------------------------------------------------------------------------*/
 
-// const body = document.querySelector("body")
-// const starFleet = new Fleet
-// starFleet.buildFleet()
-// body.innerHTML = starFleet.entireFleetHTML
-
-// document.addEventListener("click", ()=>{
-//   starFleet.updateFleetStatus(cannon(starFleet))
-//   body.innerHTML=starFleet.entireFleetHTML
-// })
 
 
 

@@ -1,4 +1,4 @@
-import {Ship} from './index'
+import {Ship, Fleet, cannon} from './index'
 
 describe("------Tests for the Ship Class------- \n", () => {
     
@@ -29,11 +29,44 @@ describe("------Tests for the Ship Class------- \n", () => {
             );
         });
 
-        test("When ship is destroyed, return kaboom", () => {
+        test("When ship is destroyed, return kaboom \n", () => {
             const testShip = new Ship("prototype", 37, 37, 420);
             testShip.updateShip()
             expect(testShip.generatedShipHTML).toBe("kaboom");
         });
     });
 
-  });
+});
+
+describe("------Tests for the Fleet Class------- \n", () => {
+
+    describe("buildFleet() Test", () => {   
+        test("Should add all ships in fleet to assignedShips array.", () => {
+            const alienFleet = new Fleet
+            alienFleet.buildFleet()
+            expect(alienFleet.assignedShips[0].shipNumber).toBe(1);
+            expect(alienFleet.assignedShips.length).toBe(14);
+        });
+    });
+
+    describe("updateFleetStatus() Test", () => {   
+        test("Given the number of the target ship, should apply the hP decrement", () => {
+            const alienFleet = new Fleet
+            alienFleet.buildFleet()
+            alienFleet.updateFleetStatus(12)
+            expect(alienFleet.assignedShips[11].currentHP).toBe(33);
+        });
+    })
+});
+
+describe("------Tests for Cannon()------- \n", () => {
+
+    test("Given a built fleet, return a random target ship number", () => {
+        const alienFleet = new Fleet
+        alienFleet.buildFleet()
+        const targetedShipNumber = cannon(alienFleet)
+        expect(targetedShipNumber).toBeGreaterThan(0)
+        expect(targetedShipNumber).toBeLessThan(15)
+    });
+
+});
