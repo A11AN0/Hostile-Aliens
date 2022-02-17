@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("/styles/images/nasa.jpg");
+  background-image: url("https://a11an0.github.io/Hostile-Aliens/styles/images/nasa.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
