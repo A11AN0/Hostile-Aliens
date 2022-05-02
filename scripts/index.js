@@ -33,7 +33,6 @@ export class Ship {
             ></div>
             </div>
             <p class = "ship__text">${this.type} Ship</p>
-
         </div>`;
 
         const hiddenHTML = `
