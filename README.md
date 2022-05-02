@@ -4,7 +4,7 @@ This is an space-invaders inspired project which I built using a test driven and
 
 ## Hostile Aliens in Action
 
-![Final Game](images/demo.gif) //Add a gif here
+![Hostile Aliens Gif](./styles/images/demo.gif)
 
 ## More about this project
 
