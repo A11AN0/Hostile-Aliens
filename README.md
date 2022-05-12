@@ -38,7 +38,7 @@ There is only one mothership in the fleet, surrounded by multiple defence and at
 
 ## Functionality
 
-These were constructed by declaring a Ship class which uses parameters of ship type, startingHP, decrement and shipNumber to determine the starting HP, HP loss per hit(decrement) among other properties.
+Ships were constructed by declaring a Ship class which uses parameters of ship type, startingHP, decrement and shipNumber to determine the starting HP, HP loss per hit(decrement) among other properties.
 
 The inner HTML of each ship class object is returned using the ship class objects's _generatedShipHTML_ getter. Each object of the ship class also has an _updateShip_ method which is responsible for changing the ship's health and _isDestroyed_ status depending on whether it has been hit by the cannon and/or it's HP has been completely exhausted depending on how many shot's it has sustained.
 
