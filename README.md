@@ -3,8 +3,8 @@
 <p align="center">
   <img src="./styles/images/stillDemo.png" alt="Hostile Aliens Demo">
 </p>
----
-Hostile Aliens is an space-invaders inspired project which I built using a test driven and object oriented approach. I built it using **JS, HTML and Sass**. To play, simply click the fire button and watch the HP of a random alien ship decrease. Alternatively, you can just press the space-bar for faster gameplay.
+
+##### Hostile Aliens is an space-invaders inspired project which I built using a test driven and object oriented approach. I built it using <u>JS, HTML and Sass</u>. To play, simply click the fire button and watch the HP of a random alien ship decrease. Alternatively, you can just press the space-bar for faster gameplay.
 
 ## Description
 
