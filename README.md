@@ -16,8 +16,6 @@ There is only one mothership in the fleet, surrounded by multiple defence and at
 
 ---
 
----
-
 | Table of Contents               |
 | ------------------------------- |
 | [User Story](#UserStory)        |
